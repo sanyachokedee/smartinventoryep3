@@ -1,0 +1,9 @@
+// check last id caterory
+
+const database = 'smartinvdb';
+
+// เลือกฐานข้อมูล
+use(database);
+
+// db.category.find().limit(1).sort($natural:-1);
+db.category.findOne().sort({'id':-1}).limit(1);

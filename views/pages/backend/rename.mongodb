@@ -1,0 +1,11 @@
+// rename product productID
+
+const database = 'smartinvdb';
+
+// เลือกฐานข้อมูล
+use(database);
+
+db.products.updateMany( 
+  { }, 
+  { $rename: { "productID": "CategoryID" } } 
+)
